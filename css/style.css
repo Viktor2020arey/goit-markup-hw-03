@@ -11,6 +11,13 @@ body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 
 /* цвет основного текста #212121 */
 /* цвет дополнительного текста #757575 */
@@ -33,8 +40,20 @@ ul {
   padding: 0;
   margin: 0;
 }
+.header-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.header-nav .item + .item {
+  margin-left: 50px;
+}
 .header-nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -48,10 +67,22 @@ ul {
 .header-nav .link.current {
   color: var(--accent-color);
 }
+.header-adress {
+  display: flex;
+  margin-left: auto;
+}
+.header-adress .item + .item {
+  margin-left: 50px;
+}
 
 .header-adress a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -60,6 +91,11 @@ ul {
 .header-adress a:hover,
 .header-adress a:focus {
   color: var(--accent-color);
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: ;
 }
 .hero {
   background-color: #2f303a;
@@ -82,6 +118,13 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+.advantages-title {
+  display: flex;
+}
+
+.advantages-title .item {
+  width: 270px;
 }
 .advantages-title .title {
   color: var(--title-text-color);
