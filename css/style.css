@@ -30,6 +30,8 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .header-nav a {
   color: var(--title-text-color);
@@ -61,6 +63,7 @@ ul {
 }
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
   color: var(--white-text);
@@ -69,6 +72,9 @@ ul {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -109,6 +115,13 @@ ul {
 .button {
   background-color: var(--accent-color);
   color: var(--white-text);
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
