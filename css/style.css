@@ -27,6 +27,14 @@ img {
 /* белый текст #FFFFFF */
 /* акцент-синий текст #2196F3 */
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+
 .logo {
   color: var(--accent-color);
   font-weight: 700;
