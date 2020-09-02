@@ -111,6 +111,7 @@ ul {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  margin-bottom: 77px;
 }
 .hero-title {
   color: var(--white-text);
@@ -129,7 +130,21 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
+.section-title.centered {
+  text-align: center;
+}
+.section {
+  margin-bottom: 94px;
+}
+
+.section.our-team {
+  background-color: var(--bg-button-portfolio);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .advantages-title {
   display: flex;
 }
@@ -142,6 +157,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 .advantages-title .lead {
   color: var(--primary-text-color);
@@ -175,6 +191,7 @@ ul {
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
+  border: 1px solid transparent;
 
   font-family: inherit;
   font-weight: 700;
@@ -188,6 +205,14 @@ ul {
 .button-portfolio button {
   background-color: var(--bg-button-portfolio);
   color: var(--title-text-color);
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  text-align: center;
+  border: 1px solid transparent;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
