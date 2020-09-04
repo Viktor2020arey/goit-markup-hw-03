@@ -20,6 +20,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* цвет основного текста #212121 */
@@ -143,6 +145,7 @@ ul {
   background-color: var(--bg-button-portfolio);
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-bottom: 0px;
 }
 
 .advantages-title {
@@ -153,8 +156,7 @@ ul {
 }
 
 .advantages-title .item {
-  /* width: calc((100% - 90px) / 4; */
-  width: 270px;
+  width: calc((100% - 3 * 30px) / 4);
   margin-right: 30px;
 }
 
@@ -181,16 +183,39 @@ ul {
 }
 
 .list-img .item {
-  width: 370px;
+  width: calc((100% -60px) / 3);
+  margin-right: 30px;
+}
+
+.list-img .item:last-child {
+  margin-right: 0px;
 }
 
 /* our-team */
+.our-team {
+  display: flex;
+}
+
+.our-team .item {
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+  background-color: var(--white-text);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team .item:last-child {
+  margin-right: 0px;
+}
+
 .our-team .name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .our-team .specialty {
   color: var(--primary-text-color);
@@ -198,7 +223,9 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  padding-bottom: 30px;
 }
+
 /* button */
 .button {
   background-color: var(--accent-color);
@@ -209,7 +236,7 @@ ul {
   padding: 10px 32px;
   min-width: 200px;
   text-align: center;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 
   font-family: inherit;
   font-weight: 700;
@@ -220,6 +247,9 @@ ul {
 }
 
 /* Портфолио */
+.button-portfolio {
+  /* display: flex; */
+}
 .button-portfolio button {
   background-color: var(--bg-button-portfolio);
   color: var(--title-text-color);
@@ -264,6 +294,10 @@ ul {
 footer {
   background-color: #2f303a;
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .logo-footer {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -271,6 +305,9 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .studio-footer {
   color: var(--white-text);
@@ -288,4 +325,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  margin-top: 9px;
+  display: inline-block;
 }
