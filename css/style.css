@@ -247,17 +247,33 @@ ul {
 }
 
 /* Портфолио */
+.card-item {
+  margin-top: 94px;
+}
+
 .button-portfolio {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
   margin-bottom: 34px;
 }
+.button-portfolio .item {
+  margin-right: 8px;
+}
+
+.button-portfolio .item:last-child {
+  margin-right: 0px;
+}
+
 .card-link .card-img {
   margin-top: 20px;
   padding: 24px 20px;
 }
-/* .item-button {
-  margin-bottom: 34px;
-} */
+.item-button {
+  /* margin-top: 94px;
+  margin-bottom: 50px; */
+}
 
 .button-portfolio button {
   background-color: var(--bg-button-portfolio);
