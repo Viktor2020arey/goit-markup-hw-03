@@ -34,7 +34,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
 }
 
 .logo {
@@ -105,15 +104,24 @@ ul {
 .header-adress a:focus {
   color: var(--accent-color);
 }
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .hero {
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 77px;
 }
 .hero-title {
   color: var(--white-text);
@@ -267,7 +275,6 @@ ul {
 }
 
 .card-link .card-img {
-  margin-top: 20px;
   padding: 24px 20px;
 }
 .item-button {
@@ -365,4 +372,7 @@ footer {
   /* width: calc((100% - 60px) / 3); */
   width: 370px;
   margin: 15px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
