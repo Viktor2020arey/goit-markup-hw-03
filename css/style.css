@@ -120,9 +120,20 @@ header {
 }
 
 .hero {
-  background-color: #2f303a;
   text-align: center;
 }
+
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 452px;
+
+  background-image: url(../image);
+  background-color: #2f303a;
+}
+
 .hero-title {
   color: var(--white-text);
   font-weight: 900;
